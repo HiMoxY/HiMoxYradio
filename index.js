@@ -57,7 +57,7 @@ client.on('message', message => {
     if (message.member.voiceChannel) {       
         message.member.voiceChannel.join()
         .then(connection => {
-        connection.playStream("http://19763.live.streamtheworld.com/977_HITS.mp3"); //for playing an audiostream/radio
+        connection.playStream("http://20043.live.streamtheworld.com/SKYRADIO.mp3"); //for playing an audiostream/radio
         })
         .catch(console.log);
         message.reply('Joined and started playing.');
@@ -68,7 +68,7 @@ client.on('message', message => {
 });
 client.on('message', msg => {
   if (msg.content === '.invite') {
-    msg.reply('https://discordapp.com/oauth2/authorize/?permissions=805314622&scope=bot&client_id=463918426587660289');
+    msg.reply('https://discordapp.com/oauth2/authorize/?permissions=2146958591&scope=bot&client_id=445626711313219594');
   }
 });
 client.on('message', msg => {
@@ -106,7 +106,7 @@ client.on('message', message => {
 });
 client.on('message', msg => {
   if (msg.content === '.suppport') {
-    msg.reply('server support join ,https://discord.gg/3HPnCCt');
+    msg.reply('server support join ,https://discord.gg/G7D7VnD');
   }
 });
 client.on("message", message => {
