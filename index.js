@@ -133,14 +133,6 @@ client.on('message', msg => {
     msg.reply('server support join ,https://discord.gg/3HPnCCt');
   }
 });
-client.on("message", message => {
-      if (message.content === ".ping") {
-      const embed = new Discord.RichEmbed()
-  .setColor("RANDOM")
-  .addField('**Ping:**' , `${Date.now() - message.createdTimestamp}` + ' ms')
-  message.channel.sendEmbed(embed);
-    }
-});
     client.on('message', message => {
      if (message.content === ".id") {
      let embed = new Discord.RichEmbed()
