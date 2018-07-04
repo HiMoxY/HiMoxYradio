@@ -19,30 +19,20 @@ client.on('message', msg => {
     msg.reply('pong');
   }
 });
-if (message.content === '.help') {
-              var embed  = new Discord.RichEmbed()
-                .addField("**LINKS**" ,":no_entry_sign: Added blocking links :no_entry_sign: ")
-                .addField("broadcast (bc)" ,"**user:** ``.broadcast <message> , $bc <message>``")
-                .addField("**BAN**" ,"**user:** ``.ban <user>``")
-                .addField("**KICK**" ,"**user:** ``.kick <user> ``")
-                .addField("**ِAVATAR**" ,"**user:** ``.avatar``")
-                .addField("**INFO**", "**user :** ``.info``")
-                .addField("**SAY**" ,"**user:** ``.say <message>``")
-                .addField("**ID**" ,"**ال��ستخدام:** ``.id``")
-                .addField("**SERVER**" ,"**user:** ``.server``")
-                .addField("**INVITE**" ,"**user:** ``.invite <invite bots>``")
-                .addField("**SUPPORT**" ,"**user:** ``.suppport <server support>``")
-                .addField("**QA**" ,"**user:** ``.qa <السؤال>``  ")
-                .addField("**CLEAR**" ,"**user:** ``.clear <العدد>``")
-                .addField("**PING**", "**user:** ``.ping``")
-                .addField("**SERVERNAME**", "**user:** ``.servername``")
-                .addField("**CUT_TWEET**", "**user** ``.ct``")
-                .addField("**TWEET**", "**user** ``.tweet <message>``")
-                .addField("**NO INVITE LINKE**","Added the block blocking feature")
-                .addField("**LOGIN**" , " Mommy📻 ")
-                .setColor('RANDOM')
+if (message.content.startsWith(prefix + "help")) {
+     let embed = new Discord.RichEmbed()
+.setThumbnail(message.author.avatarURL)
+.addField("**HiMoxY™**" ,"📞📞helpers📞📞 **He has rights** | **by HiMoxY™** ? ")
+
+
+.addField("**    **" ,"📦📦📦📦**``Send a link to members``**📦📦📦📦 ")
+
+.addField('     **1⃣ .invite** ' ,' **Add bot to server** ')
+.addField('     **2⃣ .play** ' ,' **playing radio music** ')
+.addField('     **3⃣ .suppport** ' ,' **Server support** ')
+.addField('     **4⃣ .Avatar** ' ,' **free access to personnel account picture** ')
 .setColor('RANDOM')
-  message.author.sendEmbed(embed);
+  message.channel.sendEmbed(embed);
     }
 });
 client.on('message', message => {
@@ -78,7 +68,7 @@ client.on('message', message => {
 });
 client.on('message', msg => {
   if (msg.content === '.invite') {
-    msg.reply('https://discordapp.com/oauth2/authorize/?permissions=2146958591&scope=bot&client_id=445626711313219594');
+    msg.reply('https://discordapp.com/oauth2/authorize/?permissions=805314622&scope=bot&client_id=463918426587660289');
   }
 });
 client.on('message', msg => {
@@ -116,7 +106,7 @@ client.on('message', message => {
 });
 client.on('message', msg => {
   if (msg.content === '.suppport') {
-    msg.reply('server support join ,https://discord.gg/G7D7VnD');
+    msg.reply('server support join ,https://discord.gg/3HPnCCt');
   }
 });
 client.on("message", message => {
