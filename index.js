@@ -1,29 +1,10 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`twitch.tv/HiMoxYTM| .help`,)
-  console.log('')
-  console.log('')
-  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
-  console.log(`[Start] ${new Date()}`);
-  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
-  console.log('')
-  console.log('╔[════════════════════════════════════]╗');
-  console.log(`Logged in as * [ " ${client.user.username} " ]`);
-  console.log('')
-  console.log('Informations :')
-  console.log('')
-  console.log(`servers! [ " ${client.guilds.size} " ]`);
-  console.log(`Users! [ " ${client.users.size} " ]`);
-  console.log(`channels! [ " ${client.channels.size} " ]`);
-  console.log('╚[════════════════════════════════════]╝')
-  console.log('')
-  console.log('╔[════════════]╗')
+  client.user.setGame(`.help | By @HiMoxY™#1027 .`,'');
+  console.log('---------------');
   console.log(' Bot Is Online')
-  console.log('╚[════════════]╝')
-  console.log('')
-  console.log('')
+  console.log('---------------')
 });
 client.on('message', message => {
      if (message.content === ".servers") {
@@ -33,30 +14,35 @@ client.on('message', message => {
   message.channel.sendEmbed(embed);
     }
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('pong');
   }
 });
-
-if (message.content.startsWith(prefix + "help")) {
-     let embed = new Discord.RichEmbed()
-.setThumbnail(message.author.avatarURL)
-.addField("**HiMoxY™**" ,"📞📞helpers📞📞 **He has rights** | **by HiMoxY™** ? ")
-
-
-.addField("**    **" ,"📦📦📦📦**``Send a link to members``**📦📦📦📦 ")
-
-.addField('     **1⃣ .invite** ' ,' **Add bot to server** ')
-.addField('     **2⃣ .play** ' ,' **playing radio music** ')
-.addField('     **3⃣ .suppport** ' ,' **Server support** ')
-.addField('     **4⃣ .Avatar** ' ,' **free access to personnel account picture** ')
+if (message.content === '.help') {
+              var embed  = new Discord.RichEmbed()
+                .addField("**LINKS**" ,":no_entry_sign: Added blocking links :no_entry_sign: ")
+                .addField("broadcast (bc)" ,"**user:** ``.broadcast <message> , $bc <message>``")
+                .addField("**BAN**" ,"**user:** ``.ban <user>``")
+                .addField("**KICK**" ,"**user:** ``.kick <user> ``")
+                .addField("**ِAVATAR**" ,"**user:** ``.avatar``")
+                .addField("**INFO**", "**user :** ``.info``")
+                .addField("**SAY**" ,"**user:** ``.say <message>``")
+                .addField("**ID**" ,"**ال��ستخدام:** ``.id``")
+                .addField("**SERVER**" ,"**user:** ``.server``")
+                .addField("**INVITE**" ,"**user:** ``.invite <invite bots>``")
+                .addField("**SUPPORT**" ,"**user:** ``.suppport <server support>``")
+                .addField("**QA**" ,"**user:** ``.qa <السؤال>``  ")
+                .addField("**CLEAR**" ,"**user:** ``.clear <العدد>``")
+                .addField("**PING**", "**user:** ``.ping``")
+                .addField("**SERVERNAME**", "**user:** ``.servername``")
+                .addField("**CUT_TWEET**", "**user** ``.ct``")
+                .addField("**TWEET**", "**user** ``.tweet <message>``")
+                .addField("**NO INVITE LINKE**","Added the block blocking feature")
+                .addField("**LOGIN**" , " Mommy📻 ")
+                .setColor('RANDOM')
 .setColor('RANDOM')
-  message.channel.sendEmbed(embed);
+  message.author.sendEmbed(embed);
     }
 });
 client.on('message', message => {
@@ -84,24 +70,24 @@ client.on('message', message => {
         connection.playStream("http://19763.live.streamtheworld.com/977_HITS.mp3"); //for playing an audiostream/radio
         })
         .catch(console.log);
-        message.reply('``Joined and started playing``.');
+        message.reply('Joined and started playing.');
     } else {
-                message.reply('``You need first to join a voicechannel!``');
+                message.reply('You first need to join a voicechannel!');
      }
 }
 });
 client.on('message', msg => {
   if (msg.content === '.invite') {
-    msg.reply('https://discordapp.com/oauth2/authorize/?permissions=805314622&scope=bot&client_id=463918426587660289');
+    msg.reply('https://discordapp.com/oauth2/authorize/?permissions=2146958591&scope=bot&client_id=445626711313219594');
   }
 });
 client.on('message', msg => {
   if (msg.content === '.help') {
-    msg.reply(':envelope: | ``Message sent in private``');
+    msg.reply(':envelope: | Message sent in private');
   }
 });
 client.on("message", message => {
-    var prefix = ".";
+    var prefix = "mm";
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
@@ -115,7 +101,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "Messages successfully cleared",
         footer: {
-          text: "HiMoxY™🔊."
+          text: "Mommy📻."
         }
       }}).then(msg => {msg.delete(3000)});
                           }
@@ -130,8 +116,16 @@ client.on('message', message => {
 });
 client.on('message', msg => {
   if (msg.content === '.suppport') {
-    msg.reply('server support join ,https://discord.gg/3HPnCCt');
+    msg.reply('server support join ,https://discord.gg/G7D7VnD');
   }
+});
+client.on("message", message => {
+      if (message.content === ".ping") {
+      const embed = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .addField('**Ping:**' , `${Date.now() - message.createdTimestamp}` + ' ms')
+  message.channel.sendEmbed(embed);
+    }
 });
     client.on('message', message => {
      if (message.content === ".id") {
@@ -139,7 +133,7 @@ client.on('message', msg => {
   .setThumbnail(message.author.avatarURL)  
   .setAuthor(message.author.username)
 .setDescription("Account information")
-               .setFooter(`HiMoxY™🔊.`, '')
+               .setFooter(`Mommy📻.`, '')
   .setColor("#9B59B6")
   .addField("account name", `${message.author.username}`)
   .addField('account code', message.author.discriminator)
