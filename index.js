@@ -33,11 +33,16 @@ client.on('message', message => {
   message.channel.sendEmbed(embed);
     }
 
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('pong');
   }
 });
+
 if (message.content.startsWith(prefix + "help")) {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
